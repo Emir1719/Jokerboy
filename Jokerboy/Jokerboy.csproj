@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7D956C95-3235-414C-84F6-74AF047C8FB1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Jokerboy</RootNamespace>
+    <AssemblyName>Jokerboy</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="JokerMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JokerMessageBox.Designer.cs">
+      <DependentUpon>JokerMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jokerboy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jokerboy.Designer.cs">
+      <DependentUpon>Jokerboy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JokerboyRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JokerboyRegister.Designer.cs">
+      <DependentUpon>JokerboyRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JokerSafe.cs" />
+    <Compile Include="JokerUserEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JokerUserEdit.Designer.cs">
+      <DependentUpon>JokerUserEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameHorseRace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameHorseRace.Designer.cs">
+      <DependentUpon>GameHorseRace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameDetective.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameDetective.Designer.cs">
+      <DependentUpon>GameDetective.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameFindMate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameFindMate.Designer.cs">
+      <DependentUpon>GameFindMate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameNameAnimal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameNameAnimal.Designer.cs">
+      <DependentUpon>GameNameAnimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameFastKeyboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameFastKeyboard.Designer.cs">
+      <DependentUpon>GameFastKeyboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameMillionaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameMillionaire.Designer.cs">
+      <DependentUpon>GameMillionaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GamePassaparola.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GamePassaparola.Designer.cs">
+      <DependentUpon>GamePassaparola.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlusGallery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlusGallery.designer.cs">
+      <DependentUpon>PlusGallery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AddDetective.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDetective.Designer.cs">
+      <DependentUpon>AddDetective.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tema1MonoFlat.cs" />
+    <Compile Include="Tema2Italk.cs" />
+    <Compile Include="User.cs" />
+    <EmbeddedResource Include="JokerMessageBox.resx">
+      <DependentUpon>JokerMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jokerboy.resx">
+      <DependentUpon>Jokerboy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JokerboyRegister.resx">
+      <DependentUpon>JokerboyRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JokerUserEdit.resx">
+      <DependentUpon>JokerUserEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameHorseRace.resx">
+      <DependentUpon>GameHorseRace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameDetective.resx">
+      <DependentUpon>GameDetective.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameFindMate.resx">
+      <DependentUpon>GameFindMate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameNameAnimal.resx">
+      <DependentUpon>GameNameAnimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameFastKeyboard.resx">
+      <DependentUpon>GameFastKeyboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameMillionaire.resx">
+      <DependentUpon>GameMillionaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GamePassaparola.resx">
+      <DependentUpon>GamePassaparola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlusGallery.resx">
+      <DependentUpon>PlusGallery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="AddDetective.resx">
+      <DependentUpon>AddDetective.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
