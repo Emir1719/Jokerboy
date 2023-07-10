@@ -82,6 +82,8 @@
             this.Name = "JokerMessageBox";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Jokerboy MessageBox";
+            this.TopMost = true;
+            this.Load += new System.EventHandler(this.JokerMessageBox_Load);
             this.ResumeLayout(false);
 
         }

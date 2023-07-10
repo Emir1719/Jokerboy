@@ -12,6 +12,8 @@ namespace Jokerboy
 {
     public partial class JokerMessageBox : Form
     {
+        private String title, content;
+
         public JokerMessageBox()
         {
             InitializeComponent();
@@ -21,8 +23,24 @@ namespace Jokerboy
         {
             InitializeComponent();
 
+            this.title = title;
+            this.content = content;
+        }
+
+        private void JokerMessageBox_Load(object sender, EventArgs e)
+        {
             lblTitle.Text = title;
             lblContent.Text = content;
+        }
+
+        public void setTitle(String title)
+        {
+            this.title = title;
+        }
+
+        public void setContent(String content)
+        {
+            this.content = content;
         }
     }
 }

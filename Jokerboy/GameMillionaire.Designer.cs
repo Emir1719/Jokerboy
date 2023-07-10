@@ -37,19 +37,6 @@
             this.BtnStart = new System.Windows.Forms.Button();
             this.BtnFinish = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.BtnJokerChangeLevel = new System.Windows.Forms.Button();
-            this.BtnJokerChangeQuestion = new System.Windows.Forms.Button();
-            this.BtnJokerEvenAnswer = new System.Windows.Forms.Button();
-            this.lblLevel4_2 = new System.Windows.Forms.Label();
-            this.lblLevel4_1 = new System.Windows.Forms.Label();
-            this.lblLevel3_3 = new System.Windows.Forms.Label();
-            this.lblLevel3_2 = new System.Windows.Forms.Label();
-            this.lblLevel3_1 = new System.Windows.Forms.Label();
-            this.lblLevel2_3 = new System.Windows.Forms.Label();
-            this.lblLevel2_2 = new System.Windows.Forms.Label();
-            this.lblLevel2_1 = new System.Windows.Forms.Label();
-            this.lblLevel1_2 = new System.Windows.Forms.Label();
-            this.lblLevel1_1 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -66,11 +53,24 @@
             this.label5 = new System.Windows.Forms.Label();
             this.lblTime = new System.Windows.Forms.Label();
             this.iTalk_GroupBox3 = new iTalk.iTalk_GroupBox();
-            this.textQuestion = new System.Windows.Forms.TextBox();
             this.iTalk_GroupBox2 = new iTalk.iTalk_GroupBox();
             this.s = new System.Windows.Forms.Panel();
+            this.BtnJokerChangeLevel = new System.Windows.Forms.Button();
+            this.BtnJokerChangeQuestion = new System.Windows.Forms.Button();
+            this.BtnJokerEvenAnswer = new System.Windows.Forms.Button();
             this.iTalk_GroupBox1 = new iTalk.iTalk_GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblLevel4_2 = new System.Windows.Forms.Label();
+            this.lblLevel4_1 = new System.Windows.Forms.Label();
+            this.lblLevel3_3 = new System.Windows.Forms.Label();
+            this.lblLevel3_2 = new System.Windows.Forms.Label();
+            this.lblLevel3_1 = new System.Windows.Forms.Label();
+            this.lblLevel2_3 = new System.Windows.Forms.Label();
+            this.lblLevel2_2 = new System.Windows.Forms.Label();
+            this.lblLevel2_1 = new System.Windows.Forms.Label();
+            this.lblLevel1_2 = new System.Windows.Forms.Label();
+            this.lblLevel1_1 = new System.Windows.Forms.Label();
+            this.textQuestion = new System.Windows.Forms.Label();
             this.iTalk_GroupBox4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.iTalk_Panel1.SuspendLayout();
@@ -175,190 +175,6 @@
             this.BtnFinish.Text = "Çekil";
             this.BtnFinish.UseVisualStyleBackColor = false;
             this.BtnFinish.Click += new System.EventHandler(this.BtnFinish_Click);
-            // 
-            // BtnJokerChangeLevel
-            // 
-            this.BtnJokerChangeLevel.BackColor = System.Drawing.Color.Transparent;
-            this.BtnJokerChangeLevel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnJokerChangeLevel.BackgroundImage")));
-            this.BtnJokerChangeLevel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.BtnJokerChangeLevel.Enabled = false;
-            this.BtnJokerChangeLevel.FlatAppearance.BorderSize = 0;
-            this.BtnJokerChangeLevel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
-            this.BtnJokerChangeLevel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnJokerChangeLevel.Location = new System.Drawing.Point(11, 10);
-            this.BtnJokerChangeLevel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.BtnJokerChangeLevel.Name = "BtnJokerChangeLevel";
-            this.BtnJokerChangeLevel.Size = new System.Drawing.Size(50, 58);
-            this.BtnJokerChangeLevel.TabIndex = 92;
-            this.toolTip1.SetToolTip(this.BtnJokerChangeLevel, "Zorluk düzeyini kolaya düşürme");
-            this.BtnJokerChangeLevel.UseVisualStyleBackColor = false;
-            this.BtnJokerChangeLevel.Click += new System.EventHandler(this.BtnJokerChangeLevel_Click);
-            // 
-            // BtnJokerChangeQuestion
-            // 
-            this.BtnJokerChangeQuestion.BackColor = System.Drawing.Color.Transparent;
-            this.BtnJokerChangeQuestion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnJokerChangeQuestion.BackgroundImage")));
-            this.BtnJokerChangeQuestion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.BtnJokerChangeQuestion.Enabled = false;
-            this.BtnJokerChangeQuestion.FlatAppearance.BorderSize = 0;
-            this.BtnJokerChangeQuestion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
-            this.BtnJokerChangeQuestion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnJokerChangeQuestion.Location = new System.Drawing.Point(129, 10);
-            this.BtnJokerChangeQuestion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.BtnJokerChangeQuestion.Name = "BtnJokerChangeQuestion";
-            this.BtnJokerChangeQuestion.Size = new System.Drawing.Size(50, 58);
-            this.BtnJokerChangeQuestion.TabIndex = 91;
-            this.toolTip1.SetToolTip(this.BtnJokerChangeQuestion, "Soru değiştirme");
-            this.BtnJokerChangeQuestion.UseVisualStyleBackColor = false;
-            this.BtnJokerChangeQuestion.Click += new System.EventHandler(this.BtnJokerChangeQuestion_Click);
-            // 
-            // BtnJokerEvenAnswer
-            // 
-            this.BtnJokerEvenAnswer.BackColor = System.Drawing.Color.Transparent;
-            this.BtnJokerEvenAnswer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnJokerEvenAnswer.BackgroundImage")));
-            this.BtnJokerEvenAnswer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BtnJokerEvenAnswer.Enabled = false;
-            this.BtnJokerEvenAnswer.FlatAppearance.BorderSize = 0;
-            this.BtnJokerEvenAnswer.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
-            this.BtnJokerEvenAnswer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnJokerEvenAnswer.Location = new System.Drawing.Point(70, 10);
-            this.BtnJokerEvenAnswer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.BtnJokerEvenAnswer.Name = "BtnJokerEvenAnswer";
-            this.BtnJokerEvenAnswer.Size = new System.Drawing.Size(50, 58);
-            this.BtnJokerEvenAnswer.TabIndex = 90;
-            this.toolTip1.SetToolTip(this.BtnJokerEvenAnswer, "Çift cevap");
-            this.BtnJokerEvenAnswer.UseVisualStyleBackColor = false;
-            this.BtnJokerEvenAnswer.Click += new System.EventHandler(this.BtnJokerEvenAnswer_Click);
-            // 
-            // lblLevel4_2
-            // 
-            this.lblLevel4_2.AutoSize = true;
-            this.lblLevel4_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.lblLevel4_2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lblLevel4_2.Location = new System.Drawing.Point(42, 18);
-            this.lblLevel4_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblLevel4_2.Name = "lblLevel4_2";
-            this.lblLevel4_2.Size = new System.Drawing.Size(101, 23);
-            this.lblLevel4_2.TabIndex = 9;
-            this.lblLevel4_2.Text = "1000000 TL";
-            this.toolTip1.SetToolTip(this.lblLevel4_2, "Akademik Düzey");
-            // 
-            // lblLevel4_1
-            // 
-            this.lblLevel4_1.AutoSize = true;
-            this.lblLevel4_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.lblLevel4_1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lblLevel4_1.Location = new System.Drawing.Point(48, 68);
-            this.lblLevel4_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblLevel4_1.Name = "lblLevel4_1";
-            this.lblLevel4_1.Size = new System.Drawing.Size(91, 23);
-            this.lblLevel4_1.TabIndex = 8;
-            this.lblLevel4_1.Text = "250000 TL";
-            this.toolTip1.SetToolTip(this.lblLevel4_1, "Akademik Düzey");
-            // 
-            // lblLevel3_3
-            // 
-            this.lblLevel3_3.AutoSize = true;
-            this.lblLevel3_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.lblLevel3_3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lblLevel3_3.Location = new System.Drawing.Point(48, 118);
-            this.lblLevel3_3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblLevel3_3.Name = "lblLevel3_3";
-            this.lblLevel3_3.Size = new System.Drawing.Size(91, 23);
-            this.lblLevel3_3.TabIndex = 7;
-            this.lblLevel3_3.Text = "125000 TL";
-            this.toolTip1.SetToolTip(this.lblLevel3_3, "Zor Düzey");
-            // 
-            // lblLevel3_2
-            // 
-            this.lblLevel3_2.AutoSize = true;
-            this.lblLevel3_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.lblLevel3_2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lblLevel3_2.Location = new System.Drawing.Point(52, 168);
-            this.lblLevel3_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblLevel3_2.Name = "lblLevel3_2";
-            this.lblLevel3_2.Size = new System.Drawing.Size(81, 23);
-            this.lblLevel3_2.TabIndex = 6;
-            this.lblLevel3_2.Text = "65000 TL";
-            this.toolTip1.SetToolTip(this.lblLevel3_2, "Zor Düzey");
-            // 
-            // lblLevel3_1
-            // 
-            this.lblLevel3_1.AutoSize = true;
-            this.lblLevel3_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.lblLevel3_1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lblLevel3_1.Location = new System.Drawing.Point(52, 218);
-            this.lblLevel3_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblLevel3_1.Name = "lblLevel3_1";
-            this.lblLevel3_1.Size = new System.Drawing.Size(81, 23);
-            this.lblLevel3_1.TabIndex = 5;
-            this.lblLevel3_1.Text = "35000 TL";
-            this.toolTip1.SetToolTip(this.lblLevel3_1, "Zor Düzey");
-            // 
-            // lblLevel2_3
-            // 
-            this.lblLevel2_3.AutoSize = true;
-            this.lblLevel2_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.lblLevel2_3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lblLevel2_3.Location = new System.Drawing.Point(52, 268);
-            this.lblLevel2_3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblLevel2_3.Name = "lblLevel2_3";
-            this.lblLevel2_3.Size = new System.Drawing.Size(81, 23);
-            this.lblLevel2_3.TabIndex = 4;
-            this.lblLevel2_3.Text = "10000 TL";
-            this.toolTip1.SetToolTip(this.lblLevel2_3, "Orta Düzey");
-            // 
-            // lblLevel2_2
-            // 
-            this.lblLevel2_2.AutoSize = true;
-            this.lblLevel2_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.lblLevel2_2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lblLevel2_2.Location = new System.Drawing.Point(58, 318);
-            this.lblLevel2_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblLevel2_2.Name = "lblLevel2_2";
-            this.lblLevel2_2.Size = new System.Drawing.Size(71, 23);
-            this.lblLevel2_2.TabIndex = 3;
-            this.lblLevel2_2.Text = "6000 TL";
-            this.toolTip1.SetToolTip(this.lblLevel2_2, "Orta Düzey");
-            // 
-            // lblLevel2_1
-            // 
-            this.lblLevel2_1.AutoSize = true;
-            this.lblLevel2_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.lblLevel2_1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lblLevel2_1.Location = new System.Drawing.Point(58, 368);
-            this.lblLevel2_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblLevel2_1.Name = "lblLevel2_1";
-            this.lblLevel2_1.Size = new System.Drawing.Size(71, 23);
-            this.lblLevel2_1.TabIndex = 2;
-            this.lblLevel2_1.Text = "3000 TL";
-            this.toolTip1.SetToolTip(this.lblLevel2_1, "Orta Düzey");
-            // 
-            // lblLevel1_2
-            // 
-            this.lblLevel1_2.AutoSize = true;
-            this.lblLevel1_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.lblLevel1_2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lblLevel1_2.Location = new System.Drawing.Point(62, 418);
-            this.lblLevel1_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblLevel1_2.Name = "lblLevel1_2";
-            this.lblLevel1_2.Size = new System.Drawing.Size(61, 23);
-            this.lblLevel1_2.TabIndex = 1;
-            this.lblLevel1_2.Text = "500 TL";
-            this.toolTip1.SetToolTip(this.lblLevel1_2, "Kolay Düzey");
-            // 
-            // lblLevel1_1
-            // 
-            this.lblLevel1_1.AutoSize = true;
-            this.lblLevel1_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.lblLevel1_1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lblLevel1_1.Location = new System.Drawing.Point(62, 468);
-            this.lblLevel1_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblLevel1_1.Name = "lblLevel1_1";
-            this.lblLevel1_1.Size = new System.Drawing.Size(61, 23);
-            this.lblLevel1_1.TabIndex = 0;
-            this.lblLevel1_1.Text = "100 TL";
-            this.toolTip1.SetToolTip(this.lblLevel1_1, "Kolay Düzey");
             // 
             // label16
             // 
@@ -514,7 +330,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.label5.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label5.Location = new System.Drawing.Point(9, 6);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
@@ -526,7 +342,7 @@
             // 
             this.lblTime.AutoSize = true;
             this.lblTime.BackColor = System.Drawing.Color.Transparent;
-            this.lblTime.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.lblTime.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblTime.Location = new System.Drawing.Point(71, 6);
             this.lblTime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTime.Name = "lblTime";
@@ -543,27 +359,10 @@
             this.iTalk_GroupBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.iTalk_GroupBox3.MinimumSize = new System.Drawing.Size(170, 71);
             this.iTalk_GroupBox3.Name = "iTalk_GroupBox3";
-            this.iTalk_GroupBox3.Padding = new System.Windows.Forms.Padding(6, 40, 6, 7);
+            this.iTalk_GroupBox3.Padding = new System.Windows.Forms.Padding(10, 30, 10, 10);
             this.iTalk_GroupBox3.Size = new System.Drawing.Size(754, 208);
             this.iTalk_GroupBox3.TabIndex = 2;
             this.iTalk_GroupBox3.Text = "Soru";
-            // 
-            // textQuestion
-            // 
-            this.textQuestion.BackColor = System.Drawing.Color.Lavender;
-            this.textQuestion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textQuestion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textQuestion.Enabled = false;
-            this.textQuestion.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold);
-            this.textQuestion.ForeColor = System.Drawing.Color.Black;
-            this.textQuestion.Location = new System.Drawing.Point(6, 40);
-            this.textQuestion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textQuestion.Multiline = true;
-            this.textQuestion.Name = "textQuestion";
-            this.textQuestion.ReadOnly = true;
-            this.textQuestion.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.textQuestion.Size = new System.Drawing.Size(742, 161);
-            this.textQuestion.TabIndex = 0;
             // 
             // iTalk_GroupBox2
             // 
@@ -590,6 +389,60 @@
             this.s.Name = "s";
             this.s.Size = new System.Drawing.Size(190, 78);
             this.s.TabIndex = 0;
+            // 
+            // BtnJokerChangeLevel
+            // 
+            this.BtnJokerChangeLevel.BackColor = System.Drawing.Color.Transparent;
+            this.BtnJokerChangeLevel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnJokerChangeLevel.BackgroundImage")));
+            this.BtnJokerChangeLevel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BtnJokerChangeLevel.Enabled = false;
+            this.BtnJokerChangeLevel.FlatAppearance.BorderSize = 0;
+            this.BtnJokerChangeLevel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.BtnJokerChangeLevel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnJokerChangeLevel.Location = new System.Drawing.Point(11, 10);
+            this.BtnJokerChangeLevel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.BtnJokerChangeLevel.Name = "BtnJokerChangeLevel";
+            this.BtnJokerChangeLevel.Size = new System.Drawing.Size(50, 58);
+            this.BtnJokerChangeLevel.TabIndex = 92;
+            this.toolTip1.SetToolTip(this.BtnJokerChangeLevel, "Zorluk düzeyini kolaya düşürme");
+            this.BtnJokerChangeLevel.UseVisualStyleBackColor = false;
+            this.BtnJokerChangeLevel.Click += new System.EventHandler(this.BtnJokerChangeLevel_Click);
+            // 
+            // BtnJokerChangeQuestion
+            // 
+            this.BtnJokerChangeQuestion.BackColor = System.Drawing.Color.Transparent;
+            this.BtnJokerChangeQuestion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnJokerChangeQuestion.BackgroundImage")));
+            this.BtnJokerChangeQuestion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BtnJokerChangeQuestion.Enabled = false;
+            this.BtnJokerChangeQuestion.FlatAppearance.BorderSize = 0;
+            this.BtnJokerChangeQuestion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.BtnJokerChangeQuestion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnJokerChangeQuestion.Location = new System.Drawing.Point(129, 10);
+            this.BtnJokerChangeQuestion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.BtnJokerChangeQuestion.Name = "BtnJokerChangeQuestion";
+            this.BtnJokerChangeQuestion.Size = new System.Drawing.Size(50, 58);
+            this.BtnJokerChangeQuestion.TabIndex = 91;
+            this.toolTip1.SetToolTip(this.BtnJokerChangeQuestion, "Soru değiştirme");
+            this.BtnJokerChangeQuestion.UseVisualStyleBackColor = false;
+            this.BtnJokerChangeQuestion.Click += new System.EventHandler(this.BtnJokerChangeQuestion_Click);
+            // 
+            // BtnJokerEvenAnswer
+            // 
+            this.BtnJokerEvenAnswer.BackColor = System.Drawing.Color.Transparent;
+            this.BtnJokerEvenAnswer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnJokerEvenAnswer.BackgroundImage")));
+            this.BtnJokerEvenAnswer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtnJokerEvenAnswer.Enabled = false;
+            this.BtnJokerEvenAnswer.FlatAppearance.BorderSize = 0;
+            this.BtnJokerEvenAnswer.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.BtnJokerEvenAnswer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnJokerEvenAnswer.Location = new System.Drawing.Point(70, 10);
+            this.BtnJokerEvenAnswer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.BtnJokerEvenAnswer.Name = "BtnJokerEvenAnswer";
+            this.BtnJokerEvenAnswer.Size = new System.Drawing.Size(50, 58);
+            this.BtnJokerEvenAnswer.TabIndex = 90;
+            this.toolTip1.SetToolTip(this.BtnJokerEvenAnswer, "Çift cevap");
+            this.BtnJokerEvenAnswer.UseVisualStyleBackColor = false;
+            this.BtnJokerEvenAnswer.Click += new System.EventHandler(this.BtnJokerEvenAnswer_Click);
             // 
             // iTalk_GroupBox1
             // 
@@ -623,6 +476,147 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(190, 507);
             this.panel1.TabIndex = 0;
+            // 
+            // lblLevel4_2
+            // 
+            this.lblLevel4_2.AutoSize = true;
+            this.lblLevel4_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.lblLevel4_2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblLevel4_2.Location = new System.Drawing.Point(42, 18);
+            this.lblLevel4_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLevel4_2.Name = "lblLevel4_2";
+            this.lblLevel4_2.Size = new System.Drawing.Size(101, 23);
+            this.lblLevel4_2.TabIndex = 9;
+            this.lblLevel4_2.Text = "1000000 TL";
+            this.toolTip1.SetToolTip(this.lblLevel4_2, "Akademik Düzey");
+            // 
+            // lblLevel4_1
+            // 
+            this.lblLevel4_1.AutoSize = true;
+            this.lblLevel4_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.lblLevel4_1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblLevel4_1.Location = new System.Drawing.Point(48, 68);
+            this.lblLevel4_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLevel4_1.Name = "lblLevel4_1";
+            this.lblLevel4_1.Size = new System.Drawing.Size(91, 23);
+            this.lblLevel4_1.TabIndex = 8;
+            this.lblLevel4_1.Text = "250000 TL";
+            this.toolTip1.SetToolTip(this.lblLevel4_1, "Akademik Düzey");
+            // 
+            // lblLevel3_3
+            // 
+            this.lblLevel3_3.AutoSize = true;
+            this.lblLevel3_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.lblLevel3_3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblLevel3_3.Location = new System.Drawing.Point(48, 118);
+            this.lblLevel3_3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLevel3_3.Name = "lblLevel3_3";
+            this.lblLevel3_3.Size = new System.Drawing.Size(91, 23);
+            this.lblLevel3_3.TabIndex = 7;
+            this.lblLevel3_3.Text = "125000 TL";
+            this.toolTip1.SetToolTip(this.lblLevel3_3, "Zor Düzey");
+            // 
+            // lblLevel3_2
+            // 
+            this.lblLevel3_2.AutoSize = true;
+            this.lblLevel3_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.lblLevel3_2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblLevel3_2.Location = new System.Drawing.Point(52, 168);
+            this.lblLevel3_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLevel3_2.Name = "lblLevel3_2";
+            this.lblLevel3_2.Size = new System.Drawing.Size(81, 23);
+            this.lblLevel3_2.TabIndex = 6;
+            this.lblLevel3_2.Text = "65000 TL";
+            this.toolTip1.SetToolTip(this.lblLevel3_2, "Zor Düzey");
+            // 
+            // lblLevel3_1
+            // 
+            this.lblLevel3_1.AutoSize = true;
+            this.lblLevel3_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.lblLevel3_1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblLevel3_1.Location = new System.Drawing.Point(52, 218);
+            this.lblLevel3_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLevel3_1.Name = "lblLevel3_1";
+            this.lblLevel3_1.Size = new System.Drawing.Size(81, 23);
+            this.lblLevel3_1.TabIndex = 5;
+            this.lblLevel3_1.Text = "35000 TL";
+            this.toolTip1.SetToolTip(this.lblLevel3_1, "Zor Düzey");
+            // 
+            // lblLevel2_3
+            // 
+            this.lblLevel2_3.AutoSize = true;
+            this.lblLevel2_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.lblLevel2_3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblLevel2_3.Location = new System.Drawing.Point(52, 268);
+            this.lblLevel2_3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLevel2_3.Name = "lblLevel2_3";
+            this.lblLevel2_3.Size = new System.Drawing.Size(81, 23);
+            this.lblLevel2_3.TabIndex = 4;
+            this.lblLevel2_3.Text = "10000 TL";
+            this.toolTip1.SetToolTip(this.lblLevel2_3, "Orta Düzey");
+            // 
+            // lblLevel2_2
+            // 
+            this.lblLevel2_2.AutoSize = true;
+            this.lblLevel2_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.lblLevel2_2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblLevel2_2.Location = new System.Drawing.Point(58, 318);
+            this.lblLevel2_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLevel2_2.Name = "lblLevel2_2";
+            this.lblLevel2_2.Size = new System.Drawing.Size(71, 23);
+            this.lblLevel2_2.TabIndex = 3;
+            this.lblLevel2_2.Text = "6000 TL";
+            this.toolTip1.SetToolTip(this.lblLevel2_2, "Orta Düzey");
+            // 
+            // lblLevel2_1
+            // 
+            this.lblLevel2_1.AutoSize = true;
+            this.lblLevel2_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.lblLevel2_1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblLevel2_1.Location = new System.Drawing.Point(58, 368);
+            this.lblLevel2_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLevel2_1.Name = "lblLevel2_1";
+            this.lblLevel2_1.Size = new System.Drawing.Size(71, 23);
+            this.lblLevel2_1.TabIndex = 2;
+            this.lblLevel2_1.Text = "3000 TL";
+            this.toolTip1.SetToolTip(this.lblLevel2_1, "Orta Düzey");
+            // 
+            // lblLevel1_2
+            // 
+            this.lblLevel1_2.AutoSize = true;
+            this.lblLevel1_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.lblLevel1_2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblLevel1_2.Location = new System.Drawing.Point(62, 418);
+            this.lblLevel1_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLevel1_2.Name = "lblLevel1_2";
+            this.lblLevel1_2.Size = new System.Drawing.Size(61, 23);
+            this.lblLevel1_2.TabIndex = 1;
+            this.lblLevel1_2.Text = "500 TL";
+            this.toolTip1.SetToolTip(this.lblLevel1_2, "Kolay Düzey");
+            // 
+            // lblLevel1_1
+            // 
+            this.lblLevel1_1.AutoSize = true;
+            this.lblLevel1_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.lblLevel1_1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblLevel1_1.Location = new System.Drawing.Point(62, 468);
+            this.lblLevel1_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLevel1_1.Name = "lblLevel1_1";
+            this.lblLevel1_1.Size = new System.Drawing.Size(61, 23);
+            this.lblLevel1_1.TabIndex = 0;
+            this.lblLevel1_1.Text = "100 TL";
+            this.toolTip1.SetToolTip(this.lblLevel1_1, "Kolay Düzey");
+            // 
+            // textQuestion
+            // 
+            this.textQuestion.BackColor = System.Drawing.Color.Lavender;
+            this.textQuestion.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textQuestion.Font = new System.Drawing.Font("Calibri", 20F);
+            this.textQuestion.Location = new System.Drawing.Point(10, 30);
+            this.textQuestion.Name = "textQuestion";
+            this.textQuestion.Size = new System.Drawing.Size(734, 168);
+            this.textQuestion.TabIndex = 0;
+            this.textQuestion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // GameMillionaire
             // 
@@ -666,7 +660,6 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.iTalk_GroupBox3.ResumeLayout(false);
-            this.iTalk_GroupBox3.PerformLayout();
             this.iTalk_GroupBox2.ResumeLayout(false);
             this.s.ResumeLayout(false);
             this.iTalk_GroupBox1.ResumeLayout(false);
@@ -700,7 +693,6 @@
         private System.Windows.Forms.Label lblLevel1_1;
         private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.Button BtnFinish;
-        private System.Windows.Forms.TextBox textQuestion;
         private iTalk.iTalk_Panel iTalk_Panel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label5;
@@ -719,5 +711,6 @@
         private iTalk.iTalk_GroupBox iTalk_GroupBox4;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblBalance;
+        private System.Windows.Forms.Label textQuestion;
     }
 }

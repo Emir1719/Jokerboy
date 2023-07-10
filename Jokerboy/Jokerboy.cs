@@ -130,7 +130,7 @@ namespace Jokerboy
 
                     BtnGameDedektif.Enabled = true;
                     BtnGameFind.Enabled = true;
-                    BtnGameHorse.Enabled = true;
+                    //BtnGameHorse.Enabled = true;
                     BtnGameKlavye.Enabled = true;
                     BtnGameMilyoner.Enabled = true;
                     BtnGamePass.Enabled = true;
@@ -150,7 +150,7 @@ namespace Jokerboy
 
                     BtnGameDedektif.Enabled = false;
                     BtnGameFind.Enabled = false;
-                    BtnGameHorse.Enabled = false;
+                    //BtnGameHorse.Enabled = false;
                     BtnGameKlavye.Enabled = false;
                     BtnGameMilyoner.Enabled = false;
                     BtnGamePass.Enabled = false;

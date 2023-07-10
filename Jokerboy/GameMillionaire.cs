@@ -100,7 +100,8 @@ namespace Jokerboy
             }
             else
             {
-                MetroMessageBox.Show(this, "Bu joker, kolay sorularda kullanılamaz!", "Uyarı");
+                JokerMessageBox messageBox= new JokerMessageBox("Uyarı", "Bu joker, kolay sorularda kullanılamaz!");
+                messageBox.Show();
             }
         }
 
@@ -115,12 +116,12 @@ namespace Jokerboy
             if (connect.State == ConnectionState.Closed)
                 connect.Open();
             cmd.Connection = connect;
-            cmd.CommandText = "Select Top 1 * From GameMillionaire where Difficulty=@p1 and Question<>@p2 ORDER BY Rnd(-QuesID * time());";
+            cmd.CommandText = "SELECT Top 1 * FROM GameMillionaire WHERE Difficulty=[@p1] and QuesID not in (Select QuesID from UsedQuesMillionaire where UserID=@p2) ORDER BY Rnd(-QuesID * time());";
             cmd.Parameters.Clear();
             if (getLevel() != null)
             {
                 cmd.Parameters.AddWithValue("@p1", getLevel());
-                cmd.Parameters.AddWithValue("@p2", question);//Peş peşe aynı soru gelmemesi için eklendi
+                cmd.Parameters.AddWithValue("@p2", user.getID());
                 data = cmd.ExecuteReader();
                 data.Read();
                 question = data["Question"].ToString();
@@ -131,13 +132,13 @@ namespace Jokerboy
                 correctAnswer = data["Answer"].ToString();
                 data.Close();
 
+                //Sorular ekrana yazdırılır:
                 textQuestion.Text = question;
                 BtnA.Text = A;
                 BtnB.Text = B;
                 BtnC.Text = C;
                 BtnD.Text = D;
                 currentLevel.BorderStyle = BorderStyle.FixedSingle;
-
                 timer1.Start();
             }
             else
@@ -146,6 +147,11 @@ namespace Jokerboy
                 finishGame();
             }
             connect.Close();
+        }
+
+        private void addUsedQues(int userID, int QuesID)
+        {
+            //insert into UsedQuesMillionaire values (1,3)
         }
 
         private string getLevel()
@@ -191,14 +197,12 @@ namespace Jokerboy
 
         private void result(string userAnswer)
         {
-            if (userAnswer == correctAnswer)
-            {
+            if (userAnswer == correctAnswer) {
                 //Kullanıcı doğru cevabı bulduysa:
                 user.isWin(true, calculateEarnings());
                 upLevel();
             }
-            else
-            {
+            else {
                 if (evenAnswer == false)
                     finishGame();
                 else
@@ -217,7 +221,7 @@ namespace Jokerboy
             BtnJokerChangeLevel.Enabled = false;
             BtnJokerChangeQuestion.Enabled = false;
             BtnJokerEvenAnswer.Enabled = false;
-            textQuestion.Clear();
+            textQuestion.Text = "";
             BtnA.Text = "";
             BtnB.Text = "";
             BtnC.Text = "";
@@ -230,36 +234,24 @@ namespace Jokerboy
         {
             switch (Array.IndexOf(levels, currentLevel))
             {
-                case 0:
-                    return 100;
-                case 1:
-                    return 500;
-                case 2:
-                    return 3000;
-                case 3:
-                    return 6000;
-                case 4:
-                    return 10000;
-                case 5:
-                    return 35000;
-                case 6:
-                    return 65000;
-                case 7:
-                    return 125000;
-                case 8:
-                    return 250000;
-                case 9:
-                    return 1000000;
-                default:
-                    return 0;
+                case 0: return 100;
+                case 1: return 500;
+                case 2: return 3000;
+                case 3: return 6000;
+                case 4: return 10000;
+                case 5: return 35000;
+                case 6: return 65000;
+                case 7: return 125000;
+                case 8: return 250000;
+                case 9: return 1000000;
+                default: return 0;
             }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             lblTime.Text = gameTime.ToString();
-            if (gameTime == 0)
-            {
+            if (gameTime == 0) {
                 finishGame();
             }
             gameTime--;
