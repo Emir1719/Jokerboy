@@ -138,6 +138,7 @@
     <Compile Include="AddDetective.Designer.cs">
       <DependentUpon>AddDetective.cs</DependentUpon>
     </Compile>
+    <Compile Include="QuestionDatabase.cs" />
     <Compile Include="Tema1MonoFlat.cs" />
     <Compile Include="Tema2Italk.cs" />
     <Compile Include="User.cs" />

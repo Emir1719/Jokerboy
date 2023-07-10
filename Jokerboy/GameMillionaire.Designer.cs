@@ -53,6 +53,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.lblTime = new System.Windows.Forms.Label();
             this.iTalk_GroupBox3 = new iTalk.iTalk_GroupBox();
+            this.textQuestion = new System.Windows.Forms.Label();
             this.iTalk_GroupBox2 = new iTalk.iTalk_GroupBox();
             this.s = new System.Windows.Forms.Panel();
             this.BtnJokerChangeLevel = new System.Windows.Forms.Button();
@@ -70,7 +71,6 @@
             this.lblLevel2_1 = new System.Windows.Forms.Label();
             this.lblLevel1_2 = new System.Windows.Forms.Label();
             this.lblLevel1_1 = new System.Windows.Forms.Label();
-            this.textQuestion = new System.Windows.Forms.Label();
             this.iTalk_GroupBox4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.iTalk_Panel1.SuspendLayout();
@@ -296,12 +296,13 @@
             // 
             // lblBalance
             // 
-            this.lblBalance.AutoSize = true;
-            this.lblBalance.Location = new System.Drawing.Point(8, 10);
+            this.lblBalance.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblBalance.Location = new System.Drawing.Point(0, 0);
             this.lblBalance.Name = "lblBalance";
-            this.lblBalance.Size = new System.Drawing.Size(19, 23);
+            this.lblBalance.Size = new System.Drawing.Size(192, 44);
             this.lblBalance.TabIndex = 0;
             this.lblBalance.Text = "?";
+            this.lblBalance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // iTalk_Panel1
             // 
@@ -363,6 +364,17 @@
             this.iTalk_GroupBox3.Size = new System.Drawing.Size(754, 208);
             this.iTalk_GroupBox3.TabIndex = 2;
             this.iTalk_GroupBox3.Text = "Soru";
+            // 
+            // textQuestion
+            // 
+            this.textQuestion.BackColor = System.Drawing.Color.Lavender;
+            this.textQuestion.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textQuestion.Font = new System.Drawing.Font("Calibri", 20F);
+            this.textQuestion.Location = new System.Drawing.Point(10, 30);
+            this.textQuestion.Name = "textQuestion";
+            this.textQuestion.Size = new System.Drawing.Size(734, 168);
+            this.textQuestion.TabIndex = 0;
+            this.textQuestion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // iTalk_GroupBox2
             // 
@@ -607,17 +619,6 @@
             this.lblLevel1_1.Text = "100 TL";
             this.toolTip1.SetToolTip(this.lblLevel1_1, "Kolay Düzey");
             // 
-            // textQuestion
-            // 
-            this.textQuestion.BackColor = System.Drawing.Color.Lavender;
-            this.textQuestion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textQuestion.Font = new System.Drawing.Font("Calibri", 20F);
-            this.textQuestion.Location = new System.Drawing.Point(10, 30);
-            this.textQuestion.Name = "textQuestion";
-            this.textQuestion.Size = new System.Drawing.Size(734, 168);
-            this.textQuestion.TabIndex = 0;
-            this.textQuestion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // GameMillionaire
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
@@ -655,7 +656,6 @@
             this.Load += new System.EventHandler(this.OyunMilyoner_Load);
             this.iTalk_GroupBox4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.iTalk_Panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();

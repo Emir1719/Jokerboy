@@ -19,6 +19,7 @@ namespace Jokerboy
         OleDbDataReader data;
         User user = new User(Jokerboy.userID);
         JokerSafe safe = new JokerSafe();
+        QuestionDatabase database = new QuestionDatabase();
         Label[] levels;
         Label currentLevel;
         private byte gameTime = 60;
@@ -120,8 +121,8 @@ namespace Jokerboy
             cmd.Parameters.Clear();
             if (getLevel() != null)
             {
-                cmd.Parameters.AddWithValue("@p1", getLevel());
                 cmd.Parameters.AddWithValue("@p2", user.getID());
+                cmd.Parameters.AddWithValue("@p1", getLevel());
                 data = cmd.ExecuteReader();
                 data.Read();
                 question = data["Question"].ToString();
@@ -130,6 +131,7 @@ namespace Jokerboy
                 C = data["C"].ToString();
                 D = data["D"].ToString();
                 correctAnswer = data["Answer"].ToString();
+                database.addQuestionAsUsed("UsedQuesMillionaire", user.getID(), data["QuesID"].ToString());
                 data.Close();
 
                 //Sorular ekrana yazdırılır:
@@ -140,6 +142,7 @@ namespace Jokerboy
                 BtnD.Text = D;
                 currentLevel.BorderStyle = BorderStyle.FixedSingle;
                 timer1.Start();
+                
             }
             else
             {
@@ -147,11 +150,6 @@ namespace Jokerboy
                 finishGame();
             }
             connect.Close();
-        }
-
-        private void addUsedQues(int userID, int QuesID)
-        {
-            //insert into UsedQuesMillionaire values (1,3)
         }
 
         private string getLevel()
