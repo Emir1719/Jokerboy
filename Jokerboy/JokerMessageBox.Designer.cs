@@ -31,36 +31,44 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(JokerMessageBox));
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblContent = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.bottomLine = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // lblTitle
             // 
+            this.lblTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblTitle.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblTitle.Location = new System.Drawing.Point(22, 26);
+            this.lblTitle.ForeColor = System.Drawing.Color.SeaGreen;
+            this.lblTitle.Location = new System.Drawing.Point(0, 0);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(836, 39);
+            this.lblTitle.Padding = new System.Windows.Forms.Padding(20, 15, 20, 15);
+            this.lblTitle.Size = new System.Drawing.Size(484, 80);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Başlık";
+            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblContent
             // 
             this.lblContent.AutoEllipsis = true;
-            this.lblContent.Location = new System.Drawing.Point(24, 88);
+            this.lblContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblContent.ForeColor = System.Drawing.Color.Black;
+            this.lblContent.Location = new System.Drawing.Point(0, 80);
+            this.lblContent.Margin = new System.Windows.Forms.Padding(0);
             this.lblContent.Name = "lblContent";
-            this.lblContent.Size = new System.Drawing.Size(834, 358);
+            this.lblContent.Padding = new System.Windows.Forms.Padding(20, 5, 20, 20);
+            this.lblContent.Size = new System.Drawing.Size(484, 146);
             this.lblContent.TabIndex = 1;
             this.lblContent.Text = "İçerik...";
             // 
-            // panel1
+            // bottomLine
             // 
-            this.panel1.BackColor = System.Drawing.Color.Chocolate;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 486);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(884, 39);
-            this.panel1.TabIndex = 2;
+            this.bottomLine.BackColor = System.Drawing.Color.LimeGreen;
+            this.bottomLine.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.bottomLine.Location = new System.Drawing.Point(0, 226);
+            this.bottomLine.Name = "bottomLine";
+            this.bottomLine.Size = new System.Drawing.Size(484, 35);
+            this.bottomLine.TabIndex = 2;
             // 
             // JokerMessageBox
             // 
@@ -68,11 +76,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
-            this.BackColor = System.Drawing.Color.Linen;
-            this.ClientSize = new System.Drawing.Size(884, 525);
-            this.Controls.Add(this.panel1);
+            this.BackColor = System.Drawing.Color.SeaShell;
+            this.ClientSize = new System.Drawing.Size(484, 261);
             this.Controls.Add(this.lblContent);
             this.Controls.Add(this.lblTitle);
+            this.Controls.Add(this.bottomLine);
             this.Font = new System.Drawing.Font("Calibri", 16F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -92,6 +100,6 @@
 
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label lblContent;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel bottomLine;
     }
 }

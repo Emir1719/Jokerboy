@@ -125,7 +125,7 @@ namespace Jokerboy
             BtnPass.Enabled = false;
             textAnswer.Enabled = false;
             textAnswer.Clear();
-            textQuestion.Clear();
+            textQuestion.Text = "";
         }
 
         private void BtnSubmit_Click(object sender, EventArgs e)
@@ -149,7 +149,8 @@ namespace Jokerboy
                     falseCount++;
                     gameButtons[index].BackColor = Color.Red;
                     path = Application.StartupPath + "\\Music\\false-sound.wav";
-                    MetroFramework.MetroMessageBox.Show(this, answer, "Doğru Cevap");
+                    JokerMessageBox messageBox = new JokerMessageBox("Doğru Cevap", answer);
+                    messageBox.Show();
                 }
                 sound.SoundLocation = path;
                 sound.Play();
@@ -163,7 +164,8 @@ namespace Jokerboy
             }
             else
             {
-                MetroFramework.MetroMessageBox.Show(this, "Lütfen cevap alanını boş bırakmayınız! Cevabınız yoksa soruyu pas geçebilirsiniz.");
+                JokerMessageBox messageBox = new JokerMessageBox("Lütfen cevap alanını boş bırakmayınız!", "Cevabınız yoksa soruyu pas geçebilirsiniz.");
+                messageBox.Show();
             }
         }
 

@@ -11,12 +11,12 @@ using MetroFramework;
 
 namespace Jokerboy
 {
-    enum GameState {
-        start, restart
-    }
-
     public partial class GameHorseRace : Form
     {
+        enum GameState {
+            start, restart
+        }
+
         private int horse1x, horse2x, horse3x, horse4x;
         private int horse1y, horse2y, horse3y, horse4y;
         private readonly short minSpeed = 1, maxSpeed = 12;
@@ -61,6 +61,7 @@ namespace Jokerboy
             pictureBox4.Enabled = false;
             axWindowsMediaPlayer1.Ctlcontrols.stop();
             JokerMessageBox messageBox = new JokerMessageBox("Sonuç", horseName + " kazandı.");
+            messageBox.setSize(JokerMessageBox.FormSize.small);
             messageBox.Show();
         }
 

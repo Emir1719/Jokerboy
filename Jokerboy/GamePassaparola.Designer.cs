@@ -84,11 +84,11 @@
             this.lblTrue = new System.Windows.Forms.Label();
             this.iTalk_Label1 = new iTalk.iTalk_Label();
             this.iTalk_GroupBox1 = new iTalk.iTalk_GroupBox();
-            this.textQuestion = new System.Windows.Forms.TextBox();
             this.BtnAddQues = new System.Windows.Forms.Button();
             this.BtnGameRules = new System.Windows.Forms.Button();
             this.BtnComeBack = new System.Windows.Forms.Button();
             this.BtnMain = new System.Windows.Forms.Button();
+            this.textQuestion = new System.Windows.Forms.Label();
             this.iTalk_Panel6.SuspendLayout();
             this.panel6.SuspendLayout();
             this.iTalk_Panel3.SuspendLayout();
@@ -111,7 +111,7 @@
             this.BtnPass.ForeColor = System.Drawing.Color.DodgerBlue;
             this.BtnPass.Image = ((System.Drawing.Image)(resources.GetObject("BtnPass.Image")));
             this.BtnPass.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnPass.Location = new System.Drawing.Point(594, 409);
+            this.BtnPass.Location = new System.Drawing.Point(559, 434);
             this.BtnPass.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnPass.Name = "BtnPass";
             this.BtnPass.Size = new System.Drawing.Size(215, 44);
@@ -129,7 +129,7 @@
             this.BtnSubmit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.BtnSubmit.Image = ((System.Drawing.Image)(resources.GetObject("BtnSubmit.Image")));
             this.BtnSubmit.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnSubmit.Location = new System.Drawing.Point(818, 409);
+            this.BtnSubmit.Location = new System.Drawing.Point(923, 434);
             this.BtnSubmit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnSubmit.Name = "BtnSubmit";
             this.BtnSubmit.Size = new System.Drawing.Size(215, 44);
@@ -141,24 +141,24 @@
             // 
             // textAnswer
             // 
-            this.textAnswer.Font = new System.Drawing.Font("Calibri", 14F);
-            this.textAnswer.Location = new System.Drawing.Point(676, 357);
+            this.textAnswer.Font = new System.Drawing.Font("Calibri", 18F);
+            this.textAnswer.Location = new System.Drawing.Point(641, 368);
             this.textAnswer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textAnswer.Name = "textAnswer";
-            this.textAnswer.Size = new System.Drawing.Size(355, 30);
+            this.textAnswer.Size = new System.Drawing.Size(497, 37);
             this.textAnswer.TabIndex = 77;
             this.textAnswer.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
             // 
             // label3
             // 
-            this.label3.BackColor = System.Drawing.Color.Bisque;
+            this.label3.BackColor = System.Drawing.Color.Linen;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.Font = new System.Drawing.Font("Calibri", 14F);
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(594, 357);
+            this.label3.Location = new System.Drawing.Point(559, 368);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 30);
+            this.label3.Size = new System.Drawing.Size(82, 37);
             this.label3.TabIndex = 76;
             this.label3.Text = "Cevap";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -550,7 +550,7 @@
             this.iTalk_Panel6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.iTalk_Panel6.Name = "iTalk_Panel6";
             this.iTalk_Panel6.Padding = new System.Windows.Forms.Padding(6, 7, 6, 7);
-            this.iTalk_Panel6.Size = new System.Drawing.Size(275, 56);
+            this.iTalk_Panel6.Size = new System.Drawing.Size(397, 56);
             this.iTalk_Panel6.TabIndex = 91;
             this.iTalk_Panel6.Text = "iTalk_Panel6";
             // 
@@ -563,7 +563,7 @@
             this.panel6.Location = new System.Drawing.Point(6, 7);
             this.panel6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(263, 42);
+            this.panel6.Size = new System.Drawing.Size(385, 42);
             this.panel6.TabIndex = 0;
             // 
             // lblBalance
@@ -788,35 +788,21 @@
             this.iTalk_GroupBox1.BackColor = System.Drawing.Color.Transparent;
             this.iTalk_GroupBox1.Controls.Add(this.textQuestion);
             this.iTalk_GroupBox1.Font = new System.Drawing.Font("Calibri", 13F);
-            this.iTalk_GroupBox1.Location = new System.Drawing.Point(594, 167);
+            this.iTalk_GroupBox1.Location = new System.Drawing.Point(558, 153);
             this.iTalk_GroupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.iTalk_GroupBox1.MinimumSize = new System.Drawing.Size(170, 71);
             this.iTalk_GroupBox1.Name = "iTalk_GroupBox1";
             this.iTalk_GroupBox1.Padding = new System.Windows.Forms.Padding(6, 34, 6, 7);
-            this.iTalk_GroupBox1.Size = new System.Drawing.Size(439, 177);
+            this.iTalk_GroupBox1.Size = new System.Drawing.Size(580, 191);
             this.iTalk_GroupBox1.TabIndex = 83;
             this.iTalk_GroupBox1.Text = "Soru";
-            // 
-            // textQuestion
-            // 
-            this.textQuestion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.textQuestion.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textQuestion.Enabled = false;
-            this.textQuestion.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
-            this.textQuestion.Location = new System.Drawing.Point(6, 34);
-            this.textQuestion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textQuestion.Multiline = true;
-            this.textQuestion.Name = "textQuestion";
-            this.textQuestion.ReadOnly = true;
-            this.textQuestion.Size = new System.Drawing.Size(427, 136);
-            this.textQuestion.TabIndex = 74;
             // 
             // BtnAddQues
             // 
             this.BtnAddQues.FlatAppearance.BorderSize = 0;
             this.BtnAddQues.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAddQues.Image = ((System.Drawing.Image)(resources.GetObject("BtnAddQues.Image")));
-            this.BtnAddQues.Location = new System.Drawing.Point(850, 591);
+            this.BtnAddQues.Location = new System.Drawing.Point(973, 667);
             this.BtnAddQues.Name = "BtnAddQues";
             this.BtnAddQues.Size = new System.Drawing.Size(60, 60);
             this.BtnAddQues.TabIndex = 94;
@@ -827,7 +813,7 @@
             this.BtnGameRules.FlatAppearance.BorderSize = 0;
             this.BtnGameRules.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnGameRules.Image = ((System.Drawing.Image)(resources.GetObject("BtnGameRules.Image")));
-            this.BtnGameRules.Location = new System.Drawing.Point(921, 591);
+            this.BtnGameRules.Location = new System.Drawing.Point(1044, 667);
             this.BtnGameRules.Name = "BtnGameRules";
             this.BtnGameRules.Size = new System.Drawing.Size(60, 60);
             this.BtnGameRules.TabIndex = 93;
@@ -839,7 +825,7 @@
             this.BtnComeBack.FlatAppearance.BorderSize = 0;
             this.BtnComeBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnComeBack.Image = ((System.Drawing.Image)(resources.GetObject("BtnComeBack.Image")));
-            this.BtnComeBack.Location = new System.Drawing.Point(992, 590);
+            this.BtnComeBack.Location = new System.Drawing.Point(1115, 666);
             this.BtnComeBack.Name = "BtnComeBack";
             this.BtnComeBack.Size = new System.Drawing.Size(60, 60);
             this.BtnComeBack.TabIndex = 92;
@@ -862,12 +848,24 @@
             this.BtnMain.Text = "?";
             this.BtnMain.UseVisualStyleBackColor = false;
             // 
+            // textQuestion
+            // 
+            this.textQuestion.BackColor = System.Drawing.Color.Linen;
+            this.textQuestion.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textQuestion.Font = new System.Drawing.Font("Calibri", 18F);
+            this.textQuestion.Location = new System.Drawing.Point(6, 34);
+            this.textQuestion.Name = "textQuestion";
+            this.textQuestion.Padding = new System.Windows.Forms.Padding(5);
+            this.textQuestion.Size = new System.Drawing.Size(568, 150);
+            this.textQuestion.TabIndex = 96;
+            this.textQuestion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // GamePassaparola
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1065, 663);
+            this.ClientSize = new System.Drawing.Size(1188, 739);
             this.ControlBox = false;
             this.Controls.Add(this.BtnMain);
             this.Controls.Add(this.BtnAddQues);
@@ -936,7 +934,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.iTalk_GroupBox1.ResumeLayout(false);
-            this.iTalk_GroupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -950,7 +947,6 @@
         private System.Windows.Forms.Button BtnSubmit;
         private System.Windows.Forms.TextBox textAnswer;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textQuestion;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BtnW;
         private System.Windows.Forms.Button BtnZ;
@@ -1002,5 +998,6 @@
         private System.Windows.Forms.Button BtnGameRules;
         private System.Windows.Forms.Button BtnComeBack;
         private System.Windows.Forms.Button BtnMain;
+        private System.Windows.Forms.Label textQuestion;
     }
 }
