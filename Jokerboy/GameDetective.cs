@@ -96,9 +96,9 @@ namespace Jokerboy
                 lblOlay.Text = "?";
                 BtnGame.Text = "Başla";
                 condition = "Start";
-                textKisi1.Clear();
-                textKisi2.Clear();
-                textKisi3.Clear();
+                textKisi1.Text = "";
+                textKisi2.Text = "";
+                textKisi3.Text = "";
                 timer1.Stop();
                 if (trueCount > falseCount)
                 {

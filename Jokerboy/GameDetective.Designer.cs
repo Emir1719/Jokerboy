@@ -34,10 +34,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textKisi1 = new System.Windows.Forms.TextBox();
-            this.textKisi2 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textKisi3 = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -45,12 +42,18 @@
             this.label14 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.BtnComeBack = new System.Windows.Forms.Button();
+            this.BtnGameRules = new System.Windows.Forms.Button();
+            this.BtnAddQues = new System.Windows.Forms.Button();
+            this.textKisi1 = new System.Windows.Forms.Label();
+            this.iTalk_Panel3 = new iTalk.iTalk_Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.lblFalse = new System.Windows.Forms.Label();
+            this.lblTrue = new System.Windows.Forms.Label();
             this.iTalk_Panel2 = new iTalk.iTalk_Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblBalance = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.lblFalse = new System.Windows.Forms.Label();
-            this.lblTrue = new System.Windows.Forms.Label();
             this.iTalk_GroupBox1 = new iTalk.iTalk_GroupBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.iTalk_Separator4 = new iTalk.iTalk_Separator();
@@ -78,14 +81,13 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.BtnGame = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.iTalk_Panel3 = new iTalk.iTalk_Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.BtnComeBack = new System.Windows.Forms.Button();
-            this.BtnGameRules = new System.Windows.Forms.Button();
-            this.BtnAddQues = new System.Windows.Forms.Button();
+            this.textKisi2 = new System.Windows.Forms.Label();
+            this.textKisi3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.iTalk_Panel3.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.iTalk_Panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.iTalk_GroupBox1.SuspendLayout();
@@ -93,8 +95,6 @@
             this.iTalk_Panel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.iTalk_Panel3.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblSüre
@@ -147,30 +147,6 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // textKisi1
-            // 
-            this.textKisi1.Enabled = false;
-            this.textKisi1.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
-            this.textKisi1.Location = new System.Drawing.Point(110, 264);
-            this.textKisi1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textKisi1.Multiline = true;
-            this.textKisi1.Name = "textKisi1";
-            this.textKisi1.ReadOnly = true;
-            this.textKisi1.Size = new System.Drawing.Size(574, 121);
-            this.textKisi1.TabIndex = 5;
-            // 
-            // textKisi2
-            // 
-            this.textKisi2.Enabled = false;
-            this.textKisi2.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
-            this.textKisi2.Location = new System.Drawing.Point(110, 415);
-            this.textKisi2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textKisi2.Multiline = true;
-            this.textKisi2.Name = "textKisi2";
-            this.textKisi2.ReadOnly = true;
-            this.textKisi2.Size = new System.Drawing.Size(574, 121);
-            this.textKisi2.TabIndex = 9;
-            // 
             // label5
             // 
             this.label5.BackColor = System.Drawing.Color.PeachPuff;
@@ -182,18 +158,6 @@
             this.label5.TabIndex = 6;
             this.label5.Text = "Kişi2";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textKisi3
-            // 
-            this.textKisi3.Enabled = false;
-            this.textKisi3.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
-            this.textKisi3.Location = new System.Drawing.Point(110, 568);
-            this.textKisi3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textKisi3.Multiline = true;
-            this.textKisi3.Name = "textKisi3";
-            this.textKisi3.ReadOnly = true;
-            this.textKisi3.Size = new System.Drawing.Size(574, 121);
-            this.textKisi3.TabIndex = 13;
             // 
             // pictureBox3
             // 
@@ -262,51 +226,76 @@
             this.pictureBox5.TabIndex = 35;
             this.pictureBox5.TabStop = false;
             // 
-            // iTalk_Panel2
+            // BtnComeBack
             // 
-            this.iTalk_Panel2.BackColor = System.Drawing.Color.Transparent;
-            this.iTalk_Panel2.Controls.Add(this.panel4);
-            this.iTalk_Panel2.Location = new System.Drawing.Point(774, 633);
-            this.iTalk_Panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.iTalk_Panel2.Name = "iTalk_Panel2";
-            this.iTalk_Panel2.Padding = new System.Windows.Forms.Padding(6, 7, 6, 7);
-            this.iTalk_Panel2.Size = new System.Drawing.Size(294, 58);
-            this.iTalk_Panel2.TabIndex = 38;
-            this.iTalk_Panel2.Text = "iTalk_Panel2";
+            this.BtnComeBack.FlatAppearance.BorderSize = 0;
+            this.BtnComeBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnComeBack.Image = ((System.Drawing.Image)(resources.GetObject("BtnComeBack.Image")));
+            this.BtnComeBack.Location = new System.Drawing.Point(1006, 14);
+            this.BtnComeBack.Name = "BtnComeBack";
+            this.BtnComeBack.Size = new System.Drawing.Size(60, 60);
+            this.BtnComeBack.TabIndex = 40;
+            this.BtnComeBack.UseVisualStyleBackColor = true;
+            this.BtnComeBack.Click += new System.EventHandler(this.BtnComeBack_Click);
             // 
-            // panel4
+            // BtnGameRules
             // 
-            this.panel4.BackColor = System.Drawing.Color.LightCyan;
-            this.panel4.Controls.Add(this.lblBalance);
-            this.panel4.Controls.Add(this.label24);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(6, 7);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(282, 44);
-            this.panel4.TabIndex = 0;
+            this.BtnGameRules.FlatAppearance.BorderSize = 0;
+            this.BtnGameRules.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnGameRules.Image = ((System.Drawing.Image)(resources.GetObject("BtnGameRules.Image")));
+            this.BtnGameRules.Location = new System.Drawing.Point(935, 15);
+            this.BtnGameRules.Name = "BtnGameRules";
+            this.BtnGameRules.Size = new System.Drawing.Size(60, 60);
+            this.BtnGameRules.TabIndex = 41;
+            this.BtnGameRules.UseVisualStyleBackColor = true;
+            this.BtnGameRules.Click += new System.EventHandler(this.BtnOyunKural_Click);
             // 
-            // lblBalance
+            // BtnAddQues
             // 
-            this.lblBalance.AutoSize = true;
-            this.lblBalance.Font = new System.Drawing.Font("Calibri", 15F);
-            this.lblBalance.Location = new System.Drawing.Point(80, 9);
-            this.lblBalance.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblBalance.Name = "lblBalance";
-            this.lblBalance.Size = new System.Drawing.Size(19, 24);
-            this.lblBalance.TabIndex = 1;
-            this.lblBalance.Text = "?";
+            this.BtnAddQues.FlatAppearance.BorderSize = 0;
+            this.BtnAddQues.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAddQues.Image = ((System.Drawing.Image)(resources.GetObject("BtnAddQues.Image")));
+            this.BtnAddQues.Location = new System.Drawing.Point(864, 15);
+            this.BtnAddQues.Name = "BtnAddQues";
+            this.BtnAddQues.Size = new System.Drawing.Size(60, 60);
+            this.BtnAddQues.TabIndex = 42;
+            this.BtnAddQues.UseVisualStyleBackColor = true;
+            this.BtnAddQues.Click += new System.EventHandler(this.BtnSoruEkle_Click);
             // 
-            // label24
+            // textKisi1
             // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Calibri", 15F);
-            this.label24.Location = new System.Drawing.Point(8, 9);
-            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(69, 24);
-            this.label24.TabIndex = 0;
-            this.label24.Text = "Bakiye:";
+            this.textKisi1.BackColor = System.Drawing.Color.SeaShell;
+            this.textKisi1.Font = new System.Drawing.Font("Calibri", 15F);
+            this.textKisi1.ForeColor = System.Drawing.Color.Black;
+            this.textKisi1.Location = new System.Drawing.Point(110, 264);
+            this.textKisi1.Name = "textKisi1";
+            this.textKisi1.Padding = new System.Windows.Forms.Padding(5);
+            this.textKisi1.Size = new System.Drawing.Size(620, 123);
+            this.textKisi1.TabIndex = 43;
+            // 
+            // iTalk_Panel3
+            // 
+            this.iTalk_Panel3.BackColor = System.Drawing.Color.Transparent;
+            this.iTalk_Panel3.Controls.Add(this.panel5);
+            this.iTalk_Panel3.Location = new System.Drawing.Point(792, 559);
+            this.iTalk_Panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.iTalk_Panel3.Name = "iTalk_Panel3";
+            this.iTalk_Panel3.Padding = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.iTalk_Panel3.Size = new System.Drawing.Size(276, 67);
+            this.iTalk_Panel3.TabIndex = 39;
+            this.iTalk_Panel3.Text = "iTalk_Panel3";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.LightCyan;
+            this.panel5.Controls.Add(this.lblFalse);
+            this.panel5.Controls.Add(this.lblTrue);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(6, 7);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(264, 53);
+            this.panel5.TabIndex = 0;
             // 
             // lblFalse
             // 
@@ -333,16 +322,62 @@
             this.lblTrue.TabIndex = 2;
             this.lblTrue.Text = "0D";
             // 
+            // iTalk_Panel2
+            // 
+            this.iTalk_Panel2.BackColor = System.Drawing.Color.Transparent;
+            this.iTalk_Panel2.Controls.Add(this.panel4);
+            this.iTalk_Panel2.Location = new System.Drawing.Point(792, 633);
+            this.iTalk_Panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.iTalk_Panel2.Name = "iTalk_Panel2";
+            this.iTalk_Panel2.Padding = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.iTalk_Panel2.Size = new System.Drawing.Size(276, 58);
+            this.iTalk_Panel2.TabIndex = 38;
+            this.iTalk_Panel2.Text = "iTalk_Panel2";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.LightCyan;
+            this.panel4.Controls.Add(this.lblBalance);
+            this.panel4.Controls.Add(this.label24);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(6, 7);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(264, 44);
+            this.panel4.TabIndex = 0;
+            // 
+            // lblBalance
+            // 
+            this.lblBalance.AutoSize = true;
+            this.lblBalance.Font = new System.Drawing.Font("Calibri", 15F);
+            this.lblBalance.Location = new System.Drawing.Point(80, 9);
+            this.lblBalance.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBalance.Name = "lblBalance";
+            this.lblBalance.Size = new System.Drawing.Size(19, 24);
+            this.lblBalance.TabIndex = 1;
+            this.lblBalance.Text = "?";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Calibri", 15F);
+            this.label24.Location = new System.Drawing.Point(8, 9);
+            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(69, 24);
+            this.label24.TabIndex = 0;
+            this.label24.Text = "Bakiye:";
+            // 
             // iTalk_GroupBox1
             // 
             this.iTalk_GroupBox1.BackColor = System.Drawing.Color.Transparent;
             this.iTalk_GroupBox1.Controls.Add(this.panel2);
-            this.iTalk_GroupBox1.Location = new System.Drawing.Point(774, 158);
+            this.iTalk_GroupBox1.Location = new System.Drawing.Point(792, 158);
             this.iTalk_GroupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.iTalk_GroupBox1.MinimumSize = new System.Drawing.Size(170, 71);
             this.iTalk_GroupBox1.Name = "iTalk_GroupBox1";
             this.iTalk_GroupBox1.Padding = new System.Windows.Forms.Padding(6, 40, 6, 7);
-            this.iTalk_GroupBox1.Size = new System.Drawing.Size(294, 393);
+            this.iTalk_GroupBox1.Size = new System.Drawing.Size(276, 393);
             this.iTalk_GroupBox1.TabIndex = 36;
             this.iTalk_GroupBox1.Text = "Ödüller";
             // 
@@ -371,7 +406,7 @@
             this.panel2.Location = new System.Drawing.Point(6, 40);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(282, 346);
+            this.panel2.Size = new System.Drawing.Size(264, 346);
             this.panel2.TabIndex = 0;
             // 
             // iTalk_Separator4
@@ -447,7 +482,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label18.Location = new System.Drawing.Point(228, 91);
+            this.label18.Location = new System.Drawing.Point(221, 91);
             this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(16, 23);
@@ -458,7 +493,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label17.Location = new System.Drawing.Point(228, 24);
+            this.label17.Location = new System.Drawing.Point(221, 24);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(16, 23);
@@ -578,7 +613,7 @@
             this.iTalk_Panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.iTalk_Panel1.Name = "iTalk_Panel1";
             this.iTalk_Panel1.Padding = new System.Windows.Forms.Padding(6, 7, 6, 7);
-            this.iTalk_Panel1.Size = new System.Drawing.Size(663, 146);
+            this.iTalk_Panel1.Size = new System.Drawing.Size(709, 146);
             this.iTalk_Panel1.TabIndex = 32;
             this.iTalk_Panel1.Text = "iTalk_Panel1";
             // 
@@ -587,17 +622,17 @@
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label8.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label8.Location = new System.Drawing.Point(5, 113);
+            this.label8.Location = new System.Drawing.Point(6, 113);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(159, 27);
+            this.label8.Size = new System.Drawing.Size(158, 27);
             this.label8.TabIndex = 14;
             this.label8.Text = "Dedektif";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.panel1.BackColor = System.Drawing.Color.SeaShell;
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.BtnGame);
@@ -605,7 +640,7 @@
             this.panel1.Location = new System.Drawing.Point(172, 7);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(485, 132);
+            this.panel1.Size = new System.Drawing.Size(531, 132);
             this.panel1.TabIndex = 16;
             // 
             // label9
@@ -632,7 +667,7 @@
             this.comboBox1.Location = new System.Drawing.Point(223, 12);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(242, 37);
+            this.comboBox1.Size = new System.Drawing.Size(282, 37);
             this.comboBox1.TabIndex = 17;
             // 
             // BtnGame
@@ -641,10 +676,10 @@
             this.BtnGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnGame.Font = new System.Drawing.Font("Calibri", 18F);
             this.BtnGame.ForeColor = System.Drawing.Color.Black;
-            this.BtnGame.Location = new System.Drawing.Point(223, 74);
+            this.BtnGame.Location = new System.Drawing.Point(223, 70);
             this.BtnGame.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnGame.Name = "BtnGame";
-            this.BtnGame.Size = new System.Drawing.Size(242, 41);
+            this.BtnGame.Size = new System.Drawing.Size(282, 45);
             this.BtnGame.TabIndex = 1;
             this.BtnGame.Text = "Oyuna Başla";
             this.BtnGame.UseVisualStyleBackColor = false;
@@ -662,65 +697,27 @@
             this.pictureBox4.TabIndex = 15;
             this.pictureBox4.TabStop = false;
             // 
-            // iTalk_Panel3
+            // textKisi2
             // 
-            this.iTalk_Panel3.BackColor = System.Drawing.Color.Transparent;
-            this.iTalk_Panel3.Controls.Add(this.panel5);
-            this.iTalk_Panel3.Location = new System.Drawing.Point(774, 559);
-            this.iTalk_Panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.iTalk_Panel3.Name = "iTalk_Panel3";
-            this.iTalk_Panel3.Padding = new System.Windows.Forms.Padding(6, 7, 6, 7);
-            this.iTalk_Panel3.Size = new System.Drawing.Size(294, 67);
-            this.iTalk_Panel3.TabIndex = 39;
-            this.iTalk_Panel3.Text = "iTalk_Panel3";
+            this.textKisi2.BackColor = System.Drawing.Color.SeaShell;
+            this.textKisi2.Font = new System.Drawing.Font("Calibri", 15F);
+            this.textKisi2.ForeColor = System.Drawing.Color.Black;
+            this.textKisi2.Location = new System.Drawing.Point(110, 415);
+            this.textKisi2.Name = "textKisi2";
+            this.textKisi2.Padding = new System.Windows.Forms.Padding(5);
+            this.textKisi2.Size = new System.Drawing.Size(620, 123);
+            this.textKisi2.TabIndex = 44;
             // 
-            // panel5
+            // textKisi3
             // 
-            this.panel5.BackColor = System.Drawing.Color.LightCyan;
-            this.panel5.Controls.Add(this.lblFalse);
-            this.panel5.Controls.Add(this.lblTrue);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(6, 7);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(282, 53);
-            this.panel5.TabIndex = 0;
-            // 
-            // BtnComeBack
-            // 
-            this.BtnComeBack.FlatAppearance.BorderSize = 0;
-            this.BtnComeBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnComeBack.Image = ((System.Drawing.Image)(resources.GetObject("BtnComeBack.Image")));
-            this.BtnComeBack.Location = new System.Drawing.Point(1006, 14);
-            this.BtnComeBack.Name = "BtnComeBack";
-            this.BtnComeBack.Size = new System.Drawing.Size(60, 60);
-            this.BtnComeBack.TabIndex = 40;
-            this.BtnComeBack.UseVisualStyleBackColor = true;
-            this.BtnComeBack.Click += new System.EventHandler(this.BtnComeBack_Click);
-            // 
-            // BtnGameRules
-            // 
-            this.BtnGameRules.FlatAppearance.BorderSize = 0;
-            this.BtnGameRules.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnGameRules.Image = ((System.Drawing.Image)(resources.GetObject("BtnGameRules.Image")));
-            this.BtnGameRules.Location = new System.Drawing.Point(935, 15);
-            this.BtnGameRules.Name = "BtnGameRules";
-            this.BtnGameRules.Size = new System.Drawing.Size(60, 60);
-            this.BtnGameRules.TabIndex = 41;
-            this.BtnGameRules.UseVisualStyleBackColor = true;
-            this.BtnGameRules.Click += new System.EventHandler(this.BtnOyunKural_Click);
-            // 
-            // BtnAddQues
-            // 
-            this.BtnAddQues.FlatAppearance.BorderSize = 0;
-            this.BtnAddQues.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAddQues.Image = ((System.Drawing.Image)(resources.GetObject("BtnAddQues.Image")));
-            this.BtnAddQues.Location = new System.Drawing.Point(864, 15);
-            this.BtnAddQues.Name = "BtnAddQues";
-            this.BtnAddQues.Size = new System.Drawing.Size(60, 60);
-            this.BtnAddQues.TabIndex = 42;
-            this.BtnAddQues.UseVisualStyleBackColor = true;
-            this.BtnAddQues.Click += new System.EventHandler(this.BtnSoruEkle_Click);
+            this.textKisi3.BackColor = System.Drawing.Color.SeaShell;
+            this.textKisi3.Font = new System.Drawing.Font("Calibri", 15F);
+            this.textKisi3.ForeColor = System.Drawing.Color.Black;
+            this.textKisi3.Location = new System.Drawing.Point(110, 568);
+            this.textKisi3.Name = "textKisi3";
+            this.textKisi3.Padding = new System.Windows.Forms.Padding(5);
+            this.textKisi3.Size = new System.Drawing.Size(620, 123);
+            this.textKisi3.TabIndex = 45;
             // 
             // GameDetective
             // 
@@ -730,6 +727,9 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1085, 713);
             this.ControlBox = false;
+            this.Controls.Add(this.textKisi3);
+            this.Controls.Add(this.textKisi2);
+            this.Controls.Add(this.textKisi1);
             this.Controls.Add(this.BtnAddQues);
             this.Controls.Add(this.BtnGameRules);
             this.Controls.Add(this.BtnComeBack);
@@ -742,12 +742,9 @@
             this.Controls.Add(this.label13);
             this.Controls.Add(this.lblOlay);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.textKisi3);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textKisi2);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textKisi1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Font = new System.Drawing.Font("Calibri", 14F);
@@ -762,6 +759,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.iTalk_Panel3.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.iTalk_Panel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
@@ -772,9 +772,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.iTalk_Panel3.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -784,10 +781,7 @@
         private System.Windows.Forms.Button BtnGame;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textKisi1;
-        private System.Windows.Forms.TextBox textKisi2;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textKisi3;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox4;
@@ -834,5 +828,8 @@
         private System.Windows.Forms.Button BtnComeBack;
         private System.Windows.Forms.Button BtnGameRules;
         private System.Windows.Forms.Button BtnAddQues;
+        private System.Windows.Forms.Label textKisi1;
+        private System.Windows.Forms.Label textKisi2;
+        private System.Windows.Forms.Label textKisi3;
     }
 }
